@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Test 1",
+    "options": [
+      {
+        "name": "Opció 1",
+        "person_id": 1,
+        "weight": 200
+      },
+      {
+        "name": "Opció 2",
+        "person_id": 2,
+        "weight": 200
+      },
+      {
+        "name": "Opció -1",
+        "person_id": -1,
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Test 2",
+    "options": [
+      {
+        "name": "Opció 1",
+        "person_id": 1,
+        "weight": 200
+      },
+      {
+        "name": "Opció 2",
+        "person_id": 2,
+        "weight": 200
+      },
+      {
+        "name": "Opció -1",
+        "person_id": -1,
+        "weight": 0
+      }
+    ]
+  }
+]
