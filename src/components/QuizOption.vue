@@ -26,7 +26,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .disabled {
-    opacity: 0.5;
-  }
+.disabled {
+  opacity: 0.5;
+}
 </style>
