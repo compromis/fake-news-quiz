@@ -1,10 +1,12 @@
 <template>
   <div class="quizz-wrapper">
+    <quiz-header />
     <true-false-quiz :questions="questions" />
   </div>
 </template>
 
 <script>
+import QuizHeader from './components/QuizHeader'
 import TrueFalseQuiz from './components/TrueFalseQuiz'
 import questions from './data/questions.json'
 
@@ -12,6 +14,7 @@ export default {
   name: 'quizz',
 
   components: {
+    QuizHeader,
     TrueFalseQuiz
   },
 
@@ -27,13 +30,15 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-.quizz-wrapper {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+<style lang="scss">
+@import 'variables';
+
+html,
+body {
+  font-family: $font-base;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: $text-color;
+  background: $background;
 }
 </style>
