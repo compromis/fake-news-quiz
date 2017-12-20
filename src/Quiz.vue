@@ -1,47 +1,29 @@
 <template>
   <div class="quizz-wrapper">
-    {{ answers }}
-    <div v-for="question in questions">
-      <question :question="question" :update="updateQuiz" />
-    </div>
+    <true-false-quiz :questions="questions" />
   </div>
 </template>
 
 <script>
-import Question from './components/Question'
+import TrueFalseQuiz from './components/TrueFalseQuiz'
 import questions from './data/questions.json'
 
 export default {
   name: 'quizz',
 
   components: {
-    Question
+    TrueFalseQuiz
   },
 
   data () {
     return {
-      questions: [],
-      answers: []
+      questions: []
     }
   },
 
   mounted () {
     this.questions = questions
-
-    this.$on('updateQuiz', this.updateQuiz)
   },
-
-  methods: {
-    updateQuiz (question) {
-      const questionIndex = this.answers.findIndex(q => q.id === question.id)
-
-      if (questionIndex) {
-        this.answers.splice(questionIndex, 1)
-      }
-
-      this.answers.push(question)
-    }
-  }
 }
 </script>
 
