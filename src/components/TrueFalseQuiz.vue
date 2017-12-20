@@ -4,6 +4,10 @@
     <div v-for="question in questions">
       <quiz-question :question="question" @updateQuiz="updateQuiz" />
     </div>
+
+    <div class="result" v-if="answers.length == questions.length">
+      Final {{ correctAnswers }} correct answers out of {{ questions.length }}
+    </div>
   </div>
 </template>
 
@@ -24,6 +28,12 @@ export default {
   data () {
     return {
       answers: []
+    }
+  },
+
+  computed: {
+    correctAnswers: function () {
+      return this.answers.reduce((sum, current) => sum + current.points, 0)
     }
   },
 

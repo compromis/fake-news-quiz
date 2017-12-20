@@ -6,17 +6,17 @@
       {
         "name": "Opció 1",
         "person_id": 1,
-        "weight": 200
+        "points": 1
       },
       {
         "name": "Opció 2",
         "person_id": 2,
-        "weight": 200
+        "points": 0
       },
       {
         "name": "Opció -1",
         "person_id": -1,
-        "weight": 0
+        "points": 0
       }
     ]
   },
@@ -27,17 +27,17 @@
       {
         "name": "Opció 1",
         "person_id": 1,
-        "weight": 200
+        "points": 1
       },
       {
         "name": "Opció 2",
         "person_id": 2,
-        "weight": 200
+        "points": 0
       },
       {
         "name": "Opció -1",
         "person_id": -1,
-        "weight": 0
+        "points": 0
       }
     ]
   }

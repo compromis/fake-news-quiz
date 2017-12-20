@@ -23,7 +23,7 @@ export default {
 
   mounted () {
     this.questions = questions
-  },
+  }
 }
 </script>
 
