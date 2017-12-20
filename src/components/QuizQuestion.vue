@@ -1,6 +1,6 @@
 <template>
   <div class="question-wrapper">
-    <h3>{{ question.name }}</h3> {{ selectedOption }}
+    <h3>{{ question.name }}</h3>
     <quiz-option
       v-for="option in question.options"
       :key="question.options.indexOf(option)"
@@ -11,7 +11,8 @@
       @change="selectOption" />
 
       <div class="answer" v-if="selectedOption.name">
-        Answer
+        <h3>{{ selectedOption.message }}</h3>
+        <p>{{ question.message }}</p>
       </div>
   </div>
 </template>

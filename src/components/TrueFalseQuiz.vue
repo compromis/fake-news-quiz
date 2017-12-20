@@ -1,6 +1,5 @@
 <template>
   <div class="true-false-quiz">
-    {{ answers }}
     <div v-for="question in questions">
       <quiz-question :question="question" @updateQuiz="updateQuiz" />
     </div>
