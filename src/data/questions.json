@@ -7,13 +7,13 @@
       {
         "name": "Opció 1",
         "message": "Nooo",
-        "points": 1,
+        "points": 0,
         "type": "true"
       },
       {
         "name": "Opció 2",
         "message": "Yeahh",
-        "points": 0,
+        "points": 1,
         "type": "false"
       }
     ]
@@ -26,13 +26,13 @@
       {
         "name": "Opció 1",
         "message": "Nooo",
-        "points": 1,
+        "points": 0,
         "type": "true"
       },
       {
         "name": "Opció 2",
         "message": "Yeahh",
-        "points": 0,
+        "points": 1,
         "type": "false"
       }
     ]

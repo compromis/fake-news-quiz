@@ -44,7 +44,7 @@ body {
   color: $text-color;
   background-image: url(./assets/images/background.jpg);
   background-color: $background;
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
   font-size: 100%;
 }

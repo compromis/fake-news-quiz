@@ -21,8 +21,14 @@
 
         <transition name="slide">
           <div class="answer" v-if="selectedOption.name">
-            <h4>{{ selectedOption.message }}</h4>
-            <p>{{ question.message }}</p>
+            <div :class="{ 'answer-wrapper': true, 'answered-correctly': selectedOption.points > 0, 'answered-incorrectly': selectedOption.points == 0 }">
+              <div class="answer-icon">
+                <True v-if="selectedOption.points > 0" />
+                <False v-else />
+              </div>
+              <h4>{{ selectedOption.message }}</h4>
+              <p>{{ question.message }}</p>
+            </div>
           </div>
         </transition>
       </div>
@@ -32,12 +38,16 @@
 
 <script>
 import QuizOption from './QuizOption'
+import True from '../assets/images/true.svg'
+import False from '../assets/images/false.svg'
 
 export default {
   name: 'quiz-question',
 
   components: {
-    QuizOption
+    QuizOption,
+    True,
+    False
   },
 
   props: {
@@ -95,5 +105,57 @@ export default {
   max-height: 200px;
   overflow: hidden;
   border-bottom: 4px $secondary-color solid;
+}
+
+.answer {
+  position: relative;
+  background: $white;
+  margin: 0 -1.5rem -1.5rem -1.5rem;
+
+  &-icon {
+    position: absolute;
+    top: 50%;
+    left: 1.5rem;
+    margin-top: -25px;
+
+    svg {
+      width: 50px;
+      height: 50px;
+      fill: $text-color-dark;
+    }
+  }
+
+  h4 {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+}
+
+.answer-wrapper {
+  padding: 1.5rem;
+  padding-left: 95px;
+}
+
+.answered-correctly {
+  background: lighten($true-color-end, 25%);
+}
+
+.answered-incorrectly {
+  background: lighten($false-color-start, 15%);
+}
+
+.slide-enter-active, .slide-leave-active {
+  transition: opacity .5s;
+  height: auto;
+  overflow: hidden;
+}
+.slide-enter, .slide-leave-to {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
 }
 </style>
