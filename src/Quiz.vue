@@ -42,7 +42,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $text-color;
-  background: $background;
+  background-image: url(./assets/images/background.jpg);
+  background-color: $background;
+  background-size: cover;
+  background-repeat: no-repeat;
   font-size: 100%;
 }
 

@@ -1,15 +1,36 @@
 <template>
   <section class="intro container">
     <p><span class="intro-flair">QUIZ</span></p>
+    <div class="columns intro-icons">
+      <div class="column intro-icon-true">
+        <True />
+      </div>
+      <div class="column">
+        <Newspaper />
+      </div>
+      <div class="column intro-icon-false">
+        <False />
+      </div>
+    </div>
     <h1 class="intro-heading">FAKE NEWS</h1>
     <h2 class="intro-subheading">Eres inmune?</h2>
-    <p class="intro-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p class="intro-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
   </section>
 </template>
 
 <script>
+import Newspaper from '../assets/images/newspaper.svg'
+import True from '../assets/images/true.svg'
+import False from '../assets/images/false.svg'
+
 export default {
-  name: 'quiz-intro'
+  name: 'quiz-intro',
+
+  components: {
+    Newspaper,
+    True,
+    False
+  }
 }
 </script>
 
@@ -44,7 +65,25 @@ export default {
   opacity: 0.75;
 }
 
+.intro-icons {
+  max-width: 400px;
+  margin: 0.5rem auto -2.5rem auto;
+
+  .intro-icon-true svg {
+    width: 53px;
+  }
+
+  .intro-icon-false svg {
+    width: 50px;
+  }
+
+  svg {
+    width: 100px;
+  }
+}
+
 .intro-description {
-  margin-top: 1rem;
+  max-width: 700px;
+  margin: 1rem auto;
 }
 </style>
