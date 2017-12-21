@@ -1,40 +1,69 @@
 [
   {
     "id": 1,
-    "name": "Test 1",
-    "message": "Message",
+    "name": "El PP se lía con las ayudas a la caridad y pide menos de las presupuestadas por el Consell",
+    "message": "Encara que sone impossible, els populars van presentar una esmena als Pressupostos de la Generalitat per a 2018 en la qual reclamaven 270.000 euros per a Cáritas, quan el Consell ha pressupostat 479.000 euros per aquesta entitat.",
+    "thumbnail": "https://www.eltemps.cat/imatges/articles/isabelbonig_corts_efe.jpg",
     "options": [
       {
-        "name": "Opció 1",
-        "message": "Nooo",
-        "points": 0,
-        "type": "true"
+        "name": "Vertader",
+        "message": "Per desgràcia, així va ser...",
+        "points": 1,
+        "type": "true",
+        "gif": "https://media3.giphy.com/media/1332tmUf9Myo4o/giphy.gif"
       },
       {
-        "name": "Opció 2",
-        "message": "Yeahh",
-        "points": 1,
-        "type": "false"
+        "name": "Fals",
+        "message": "Per desgràcia, així va ser...",
+        "points": 0,
+        "type": "false",
+        "gif": "https://media3.giphy.com/media/aWPGuTlDqq2yc/giphy.gif"
       }
     ]
   },
   {
     "id": 2,
-    "name": "Test 2",
-    "message": "Message",
+    "name": "La conselleria de Educació cierra aulas en los centros concertados.",
+    "message": "La Conselleria NO tanca aules ni unitats de la concertada, estableix concerts en funció d'on arriba la pública. Els pares tenen llibertad per a triar el centre d'estudis dels seus fills.",
+    "thumbnail": "https://ep00.epimg.net/ccaa/imagenes/2015/12/18/valencia/1450460498_030461_1450463282_noticia_normal.jpg",
     "options": [
       {
-        "name": "Opció 1",
-        "message": "Nooo",
+        "name": "Cert!",
+        "message": "Fals!",
         "points": 0,
-        "type": "true"
+        "type": "true",
+        "gif": "https://media.giphy.com/media/l3vR71pwNTO4dJh3q/giphy.gif"
       },
       {
-        "name": "Opció 2",
-        "message": "Yeahh",
+        "name": "Vaja trola!",
+        "message": "Correcte!",
         "points": 1,
-        "type": "false"
+        "type": "false",
+        "gif": "https://media3.giphy.com/media/l3vR5UgInxQW8wK6k/giphy.gif"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Un senador de Compromís pregunta al Gobierno por un 'apocalipsis zombi'",
+    "message": "El senador Carles Mulet va plantejar aquesta pregunta al Senat per tal de visibilitzar la manca de serietat en moltes de les respostes que el govern de Rajoy dóna a les preguntes parlamentàries dels grups de l'oposició a la cambra alta.",
+    "thumbnail": "http://ichef.bbci.co.uk/wwfeatures/wm/live/1280_640/images/live/p0/30/zw/p030zwtv.jpg",
+    "options": [
+      {
+        "name": "Vertader",
+        "message": "Tota la raó",
+        "points": 1,
+        "type": "true",
+        "gif": "https://media1.giphy.com/media/jqTJ9H0zE9Cta/giphy.gif"
+      },
+      {
+        "name": "Impossible!",
+        "message": "Oh yeah...",
+        "points": 0,
+        "type": "false",
+        "gif": "https://media.giphy.com/media/EIndPd19dL1sY/giphy.gif"
       }
     ]
   }
+
 ]

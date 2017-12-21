@@ -3,7 +3,7 @@
     <div class="question-wrapper">
       <div class="question">
         <div class="question-image">
-          <img src="http://junkee.com/wp-content/uploads/2017/01/transflag.jpg" alt="" />
+          <img :src="question.thumbnail" alt="Imatge de ka noticia" />
         </div>
         <h3>{{ question.name }}</h3>
 
@@ -26,6 +26,7 @@
                 <True v-if="selectedOption.points > 0" />
                 <False v-else />
               </div>
+              <img :src="selectedOption.gif" alt="Gif" />
               <h4>{{ selectedOption.message }}</h4>
               <p>{{ question.message }}</p>
             </div>
@@ -97,6 +98,8 @@ export default {
     font-family: $font-headline;
     font-size: 2rem;
     padding: 1rem 1.5rem 1.5rem 1.5rem;
+    line-height: 1.25;
+    margin-bottom: 1rem;
   }
 }
 
@@ -127,11 +130,12 @@ export default {
 
   h4 {
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 
   p {
     font-size: 1.25rem;
+    line-height: 1.25;
   }
 }
 

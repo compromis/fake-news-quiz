@@ -4,7 +4,7 @@
       <quiz-question :question="question" @updateQuiz="updateQuiz" />
     </div>
 
-    <div class="result" v-if="answers.length == questions.length">
+    <div class="result" v-if="answers.length == questions.length && answers.length > 1">
       Final {{ correctAnswers }} correct answers out of {{ questions.length }}
     </div>
   </div>
@@ -51,7 +51,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .true-false-quiz {
-    margin-top: -2rem;
-  }
+@import '../variables';
+
+.true-false-quiz {
+  margin-top: -2rem;
+  margin-bottom: 4rem;
+}
+
+.result {
+  max-width: 600px;
+  margin: 0 auto;
+  background: $white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 40px -5px rgba(0, 0, 0, 0.9);
+  color: $text-color-dark;
+}
 </style>

@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: 'quiz-header'
+  name: 'app-header'
 }
 </script>
 

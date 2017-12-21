@@ -1,13 +1,15 @@
 <template>
   <div class="quizz-wrapper">
-    <quiz-header />
+    <app-header />
     <quiz-intro />
     <true-false-quiz :questions="questions" />
+    <app-footer />
   </div>
 </template>
 
 <script>
-import QuizHeader from './components/QuizHeader'
+import AppHeader from './components/AppHeader'
+import AppFooter from './components/AppFooter'
 import QuizIntro from './components/QuizIntro'
 import TrueFalseQuiz from './components/TrueFalseQuiz'
 import questions from './data/questions.json'
@@ -16,7 +18,8 @@ export default {
   name: 'quizz',
 
   components: {
-    QuizHeader,
+    AppHeader,
+    AppFooter,
     QuizIntro,
     TrueFalseQuiz
   },
@@ -46,6 +49,7 @@ body {
   background-color: $background;
   background-size: 100%;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   font-size: 100%;
 }
 
