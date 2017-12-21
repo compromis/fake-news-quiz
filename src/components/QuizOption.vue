@@ -1,5 +1,13 @@
 <template>
-  <label :class="{ 'option': true, 'option-true': option.type == 'true', 'option-false': option.type == 'false', 'disabled': disabled }">
+  <label :class="{
+    'option': true,
+    'option-true': option.type == 'true',
+    'option-false': option.type == 'false',
+    'disabled': disabled,
+    'selected': selected,
+    'option-is-correct': option.points > 0 && selected,
+    'option-is-incorrect': option.points == 0 && selected
+    }">
     <input
       type="radio"
       :value="option"
@@ -88,5 +96,14 @@ input {
 
 .disabled {
   opacity: 0.5;
+}
+
+.option-is-correct.selected,
+.option-is-correct.selected:hover {
+  box-shadow: 0 0 0 5px green;
+}
+.option-is-incorrect.selected,
+.option-is-incorrect.selected:hover {
+  box-shadow: 0 0 0 5px red;
 }
 </style>

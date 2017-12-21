@@ -23,10 +23,9 @@
           <div class="answer" v-if="selectedOption.name">
             <div :class="{ 'answer-wrapper': true, 'answered-correctly': selectedOption.points > 0, 'answered-incorrectly': selectedOption.points == 0 }">
               <div class="answer-icon">
-                <True v-if="selectedOption.points > 0" />
-                <False v-else />
+                <Thumbs :class="{ 'upside-down': selectedOption.points == 0 }" />
               </div>
-              <img :src="selectedOption.gif" alt="Gif" />
+              <img :src="selectedOption.gif" alt="Gif" class="answer-gif" />
               <h4>{{ selectedOption.message }}</h4>
               <p>{{ question.message }}</p>
             </div>
@@ -41,6 +40,7 @@
 import QuizOption from './QuizOption'
 import True from '../assets/images/true.svg'
 import False from '../assets/images/false.svg'
+import Thumbs from '../assets/images/thumbs.svg'
 
 export default {
   name: 'quiz-question',
@@ -48,7 +48,8 @@ export default {
   components: {
     QuizOption,
     True,
-    False
+    False,
+    Thumbs
   },
 
   props: {
@@ -81,7 +82,7 @@ export default {
 
 .question-wrapper {
   border: 3px rgba(255, 255, 255, 0.2) solid;
-  padding: 0.25rem;
+  padding: 5px;
   border-radius: 15px;
 }
 
@@ -126,6 +127,14 @@ export default {
       height: 50px;
       fill: $text-color-dark;
     }
+
+    .upside-down {
+      transform: rotate(180deg);
+    }
+  }
+
+  &-gif {
+    max-width: 100%;
   }
 
   h4 {
