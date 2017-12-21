@@ -7,17 +7,14 @@
       {
         "name": "Opció 1",
         "message": "Nooo",
-        "points": 1
+        "points": 1,
+        "type": "true"
       },
       {
         "name": "Opció 2",
         "message": "Yeahh",
-        "points": 0
-      },
-      {
-        "name": "Opció -1",
-        "message": "Yeaahh 2",
-        "points": 0
+        "points": 0,
+        "type": "false"
       }
     ]
   },
@@ -29,17 +26,14 @@
       {
         "name": "Opció 1",
         "message": "Nooo",
-        "points": 1
+        "points": 1,
+        "type": "true"
       },
       {
         "name": "Opció 2",
         "message": "Yeahh",
-        "points": 0
-      },
-      {
-        "name": "Opció -1",
-        "message": "yeahh",
-        "points": 0
+        "points": 0,
+        "type": "false"
       }
     ]
   }

@@ -51,5 +51,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+  .true-false-quiz {
+    margin-top: -2rem;
+  }
 </style>

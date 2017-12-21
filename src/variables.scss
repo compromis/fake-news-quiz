@@ -1,9 +1,13 @@
 $font-base: Compromis, Helvetica, Arial, sans-serif;
-$font-headings: Oswald, sans-serif;
+$font-intro: Oswald, sans-serif;
+$font-headline: Bitter, serif;
 $background: #0B2359;
 $text-color: #fff;
+$text-color-dark: #2c3e50;
 $basic-orange: #ea580c;
 $orange-start: #e28333;
 $orange-end: #d4432f;
 $secondary-color: #dd473e;
 $white: #fff;
+$true-gradient: linear-gradient(to bottom right, #00CD87 0%, #3AB52A 100%);
+$false-gradient: linear-gradient(to bottom right, #FF4747 0%, #D90A6F 100%);

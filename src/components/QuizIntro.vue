@@ -2,13 +2,13 @@
   <section class="intro container">
     <p><span class="intro-flair">QUIZ</span></p>
     <div class="columns intro-icons">
-      <div class="column intro-icon-true">
+      <div class="column intro-icon-true is-hidden-mobile">
         <True />
       </div>
       <div class="column">
         <Newspaper />
       </div>
-      <div class="column intro-icon-false">
+      <div class="column intro-icon-false is-hidden-mobile">
         <False />
       </div>
     </div>
@@ -43,7 +43,7 @@ export default {
 }
 
 .intro-heading {
-  font-family: $font-headings;
+  font-family: $font-intro;
   font-size: 7rem;
   position: relative;
   text-shadow: 10px 10px 0 $secondary-color;
