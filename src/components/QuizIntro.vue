@@ -14,7 +14,7 @@
     </div>
     <h1 class="intro-heading">FAKE NEWS</h1>
     <h2 class="intro-subheading">Eres inmune?</h2>
-    <p class="intro-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    <p class="intro-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
   </section>
 </template>
 
@@ -38,7 +38,7 @@ export default {
 @import '../variables';
 
 .intro {
-  padding: 5rem;
+  padding: 2.5rem;
   text-align: center;
 }
 
@@ -56,6 +56,7 @@ export default {
   font-size: 2.5rem;
   letter-spacing: -1px;
   margin-top: 3rem;
+  line-height: 1;
 }
 
 .intro-flair {
@@ -85,5 +86,25 @@ export default {
 .intro-description {
   max-width: 700px;
   margin: 1rem auto;
+}
+
+@media (min-width: 769px) {
+  .intro {
+    padding: 5rem;
+
+    p {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+@media (max-height: 700px) {
+  .intro {
+    padding-top: 2.5rem;
+
+    &-icons {
+      display: none;
+    }
+  }
 }
 </style>
