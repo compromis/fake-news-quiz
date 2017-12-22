@@ -5,10 +5,10 @@
 
       <div class="footer-social-plugins">
         <div>
-          <iframe src="https://platform.twitter.com/widgets/follow_button.html?screen_name=compromis&amp;show_screen_name=true&amp;show_count=true&amp;size=l&amp;lang=es" class="footer-social-plugins-twitter" width="200" height="37"></iframe>
+          <iframe src="https://platform.twitter.com/widgets/follow_button.html?screen_name=compromis&show_screen_name=true&show_count=true&size=l&lang=es" class="footer-social-plugins-twitter" width="200" height="37"></iframe>
         </div>
         <div>
-          <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com%2Fcoaliciocompromis&amp;width=450&amp;layout=standard&amp;action=like&amp;size=large&amp;show_faces=true&amp;share=true&amp;height=80&amp;appId=252515324782640&amp;locale=ca_ES" class="footer__social-plugins__facebook" width="450" height="80" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+          <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com%2Fcoaliciocompromis&width=450&layout=standard&action=like&size=large&show_faces=true&share=true&height=80&appId=252515324782640&locale=ca_ES" class="footer__social-plugins__facebook" width="450" height="80" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
         </div>
       </div>
       <hr />
