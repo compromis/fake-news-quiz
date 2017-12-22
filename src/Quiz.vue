@@ -12,10 +12,10 @@ import AppHeader from './components/AppHeader'
 import AppFooter from './components/AppFooter'
 import QuizIntro from './components/QuizIntro'
 import TrueFalseQuiz from './components/TrueFalseQuiz'
-import questions from './data/questions.json'
+import quiz from './data/quiz.json'
 
 export default {
-  name: 'quizz',
+  name: 'quiz',
 
   components: {
     AppHeader,
@@ -31,7 +31,7 @@ export default {
   },
 
   mounted () {
-    this.questions = questions
+    this.questions = quiz.questions
   }
 }
 </script>
