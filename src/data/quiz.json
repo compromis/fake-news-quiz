@@ -300,19 +300,23 @@
   "results": [
     {
       "points": 0,
-      "message": "You got 0"
+      "message": "No et cregues tot el que lliges per Internet. Malauradament, la xarxa està plena de notícies falses, per això, et recomanem sempre llegir-les en més d'un mitjà de comunicació per a poder contrastar-les i que no et donen gat per llebre.",
+      "gif": "https://media.giphy.com/media/P0RWkdsRpK7ss/giphy.gif"
     },
     {
-      "points": 5,
-      "message": "You got 5"
+      "points": 8,
+      "message": "Sens dubte eres una persona que està al dia de la informació, però, a vegades baixes la guàrdia i et colen alguna que altra “fake news”, ves més en compte.",
+      "gif": "https://media3.giphy.com/media/l0IyjvPvBs0oYEwZW/giphy.gif"
     },
     {
-      "points": 7,
-      "message": "You got 7"
+      "points": 13,
+      "message": "Enhorabona, eres un pro detectant notícies falses!",
+      "gif": "https://media.giphy.com/media/26DOoDwdNGKAg6UKI/giphy.gif"
     },
     {
-      "points": 10,
-      "message": "You got 0"
+      "points": 15,
+      "message": "Wow! Eres un pro detectant notícies falses, no te colen ni una.",
+      "gif": "https://media.giphy.com/media/YYD3fLEOdcOv6/giphy.gif"
     }
   ]
 }

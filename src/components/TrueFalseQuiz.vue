@@ -13,6 +13,7 @@
 
     <quiz-results
       v-if="answers.length == questions.length && answers.length > 1"
+      :results="results"
       :correct-answers="correctAnswers"
       :total-questions="questions.length" />
   </div>
@@ -31,7 +32,8 @@ export default {
   },
 
   props: {
-    questions: Array
+    questions: Array,
+    results: Array
   },
 
   data () {

@@ -2,7 +2,7 @@
   <div class="quizz-wrapper">
     <app-header />
     <quiz-intro />
-    <true-false-quiz :questions="questions" />
+    <true-false-quiz :questions="questions" :results="results" />
     <app-footer />
   </div>
 </template>
@@ -26,12 +26,14 @@ export default {
 
   data () {
     return {
-      questions: []
+      questions: [],
+      results: []
     }
   },
 
   mounted () {
     this.questions = quiz.questions
+    this.results = quiz.results
   }
 }
 </script>
