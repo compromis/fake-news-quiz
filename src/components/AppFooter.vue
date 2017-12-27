@@ -4,10 +4,10 @@
       <h4>Segueix l'activitat de <a href="https://compromis.net" target="_blank"><img src="https://compromis.net/wp-content/themes/Compromis/images/logo-compromis-retina-bw.png" alt="Compromís" class="footer-logo"></a></h4>
 
       <div class="footer-social-plugins">
-        <div>
+        <div class="plugin-wrapper">
           <iframe src="https://platform.twitter.com/widgets/follow_button.html?screen_name=compromis&show_screen_name=true&show_count=true&size=l&lang=es" class="footer-social-plugins-twitter" width="200" height="37"></iframe>
         </div>
-        <div>
+        <div class="plugin-wrapper">
           <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com%2Fcoaliciocompromis&width=450&layout=standard&action=like&size=large&show_faces=true&share=true&height=80&appId=252515324782640&locale=ca_ES" class="footer__social-plugins__facebook" width="450" height="80" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
         </div>
       </div>
@@ -30,7 +30,7 @@ export default {
 
 .footer {
   color: #414142;
-  margin-top: 400px;
+  margin-top: 200px;
   padding-bottom: 2rem;
 
   p {
@@ -65,5 +65,10 @@ export default {
     overflow: hidden;
     height: 57px;
   }
+}
+
+.plugin-wrapper {
+  max-width: 100%;
+  overflow: hidden;
 }
 </style>
