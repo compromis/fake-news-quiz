@@ -14,8 +14,9 @@
     </div>
     <h1 class="intro-heading">FAKE NEWS</h1>
     <h2 class="intro-subheading">Eres inmune?</h2>
-    <p class="intro-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-    <p class="intro-action"><a href="#q1" v-scroll-to="'#q1'">START</a></p>
+    <p class="intro-description">Eres dels que pensen que només els “cunyaos” són carnassa de fakes news, i que estàs prou informat per a diferenciar entre una notícia falsa i una que no ho és? Posat a prova en el següent quiz!</p>
+    <p class="intro-note"><strong>Avís:</strong> Encara que ho semble, moltes d'estes notícies no han estat publicades el Dia dels Innocents</p>
+    <p class="intro-action"><a href="#q1" v-scroll-to="'#q1'">Comença</a></p>
   </section>
 </template>
 
@@ -87,6 +88,14 @@ export default {
 .intro-description {
   max-width: 700px;
   margin: 1rem auto;
+}
+
+.intro .intro-note {
+  font-size: 1rem;
+  opacity: 0.5;
+  strong {
+    color: #fff;
+  }
 }
 
 .intro-action {
