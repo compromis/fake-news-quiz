@@ -69,9 +69,9 @@
     },
     {
       "id": 4,
-      "name": "El PP vota a favor del a Ley “Trans”",
+      "name": "Unanimidad en las Corts en favor de la Ley “Trans”",
       "message": "El PP ha sigut l'únic partit de les Corts Valencianes que no va donar suport a la Llei integral de reconeixement del dret a la identitat i l'expressió de gènere.",
-      "thumbnail": "http://ichef.bbci.co.uk/wwfeatures/wm/live/1280_640/images/live/p0/30/zw/p030zwtv.jpg",
+      "thumbnail": "https://estoybailando.com/wp-content/uploads/2017/03/ley_trans_valencia.jpg",
       "options": [
         {
           "name": "Vertader",
@@ -91,9 +91,9 @@
     },
     {
       "id": 5,
-      "name": "Los carriles bicis aumentan los atascos y provocan mayor concentración de contaminación. ",
-      "message": "Gràcies a la nova política de mobilitat que fomenta la peatonalització de carrers, el transport públic i l'úl de la bicicleta, els nivells de contaminació de la ciutat de València s'han reduït.",
-      "thumbnail": "https://pbs.twimg.com/media/C43rJJ9WcAIBTXQ.jpg",
+      "name": "Los carriles bicis aumentan los atascos y disparan la contaminación en el centro València",
+      "message": "Gràcies a la nova política de mobilitat que fomenta la peatonalització de carrers, el transport públic i l'úl de la bicicleta, els nivells de contaminació de la ciutat de València s'han reduït",
+      "thumbnail": "https://elpais.com/ccaa/imagenes/2016/05/12/valencia/1463047190_524463_1463049615_sumario_grande.jpg",
       "options": [
         {
           "name": "Vertader",
@@ -115,7 +115,7 @@
       "id": 6,
       "name": "Todos los partidos firmantes de la Declaración Institucional por una Financiación Justa acuden a la manifestación en su defensa",
       "message": "Malgrat que el PP va votar a favor en les Corts de reclamar al govern central un Finançament Just per al País Valencià, no va acudir amb la resta de partits, sindicats, patronal i entitas socials a la manifestació celebrada el 18 de novembre per a exigir-ho. Biporalitat?",
-      "thumbnail": "http://ichef.bbci.co.uk/wwfeatures/wm/live/1280_640/images/live/p0/30/zw/p030zwtv.jpg",
+      "thumbnail": "https://www.elnacional.cat/uploads/s1/31/13/34/0/manifestaci%C3%B3%20val%C3%A8ncia%20finan%C3%A7ament%202%20ACN.JPG",
       "options": [
         {
           "name": "Vertader",
@@ -137,7 +137,7 @@
       "id": 7,
       "name": "La Plaza de la Igualdad de Alicante pasa a llamarse Plaza de la División Azul",
       "message": "El PP va aconseguir que tornaren el noms dels carrers franquistes a la ciutat d'Alacant.",
-      "thumbnail": "http://ichef.bbci.co.uk/wwfeatures/wm/live/1280_640/images/live/p0/30/zw/p030zwtv.jpg",
+      "thumbnail": "http://images.eldiario.es/fotos/operario-Plaza-Division-Azul-Alicante_EDIIMA20170310_0243_5.jpg",
       "options": [
         {
           "name": "Vertader",
@@ -159,7 +159,7 @@
       "id": 8,
       "name": "València multará a los balcones con banderas al equiparalas con ropa tendida",
       "message": "L'Ajuntament de València no multarà a ningú per penjar banderes als balcons. Es tracta d'un bulo que corre per les xarxes socials.",
-      "thumbnail": "http://ichef.bbci.co.uk/wwfeatures/wm/live/1280_640/images/live/p0/30/zw/p030zwtv.jpg",
+      "thumbnail": "https://i.imgur.com/s9hDeCX.jpg",
       "options": [
         {
           "name": "Vertader",
@@ -181,7 +181,7 @@
       "id": 9,
       "name": "Joan Ribó asegura que en València 'hay hombres con vulva y mujeres con pene'",
       "message": "Sí, així ho va declarar l'alcalde de València en defensa de la diveritat i en resposta a la campanya trànsfoba de l'associació “Hazte Oir”.",
-      "thumbnail": "http://ichef.bbci.co.uk/wwfeatures/wm/live/1280_640/images/live/p0/30/zw/p030zwtv.jpg",
+      "thumbnail": "http://www.lasprovincias.es/las_provincias/noticias/201507/19/media/ribo.jpg",
       "options": [
         {
           "name": "Vertader",
@@ -201,9 +201,9 @@
     },
     {
       "id": 10,
-      "name": "Un grupo de fans de la película Screen celebran Halloween a las puertas de la casa de Mónica Oltra",
+      "name": "Un grupo de fans de la película Scream celebran Halloween a las puertas de la casa de Mónica Oltra",
       "message": "Malauradament les persones amb caretas de Screen que es van concentrar a les portes de la casa de Mónica Oltra no eren seguidors de la popular pel·lícula de terror, sino un grup d'extrema dreta que aprofitava la nit per assejtar a la vicepresidenta en el seu domicili. ",
-      "thumbnail": "http://ichef.bbci.co.uk/wwfeatures/wm/live/1280_640/images/live/p0/30/zw/p030zwtv.jpg",
+      "thumbnail": "http://static.lasprovincias.es/www/multimedia/201710/19/media/cortadas/escrache2-U213734463450hZG-U401061348143yI-624x385@Las%20Provincias-LasProvincias.jpg",
       "options": [
         {
           "name": "Vertader",
@@ -223,10 +223,76 @@
     },
     {
       "id": 11,
+      "name": "Bonig define como “privilegio franquista” la Ley que ella misma aprobó",
+      "message": "Encara que semble una broma, la realitat és que la notícia és autèntica. La portaveu del PP Valencià va catalogar de “franquista” la llei de Participació Institucional aprovada amb els vots del PP en l'any 2015. ",
+      "thumbnail": "http://estaticos.elperiodico.com/resources/jpg/9/0/1490958524809.jpg",
+      "options": [
+        {
+          "name": "Vertader",
+          "message": "Fake!",
+          "points": 1,
+          "type": "true",
+          "gif": "https://media.giphy.com/media/3o6gEaWjgBft7euDPW/giphy.gif"
+        },
+        {
+          "name": "Impossible!",
+          "message": "Fake!",
+          "points": 0,
+          "type": "false",
+          "gif": "https://media.giphy.com/media/wofftnAdDtx4s/giphy.gif"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "El juez falla embargar al PP para pagar al abogado de Nomdedéu",
+      "message": "Sembla que el “simpa” del PP a Feria València no va ser l'únic. Els populars encara no han abonat les costes del judici que van perdre contra Enric Nomdedéu en maig, i el jutjat de Primera Instància número 5 de Castelló ha donat ordre d'embargament dels comptes de la seua agrupació local de Castelló.",
+      "thumbnail": "http://4.bp.blogspot.com/-SonhVe5zxZk/VRhBcs9PyxI/AAAAAAAAGeI/d2cSXhhfe5A/s1600/Entrevista%2BEnric.jpg",
+      "options": [
+        {
+          "name": "Vertader",
+          "message": "Fake!",
+          "points": 1,
+          "type": "true",
+          "gif": "https://media.giphy.com/media/3ohzdKVE5AFMNLQ2SQ/giphy.gif"
+        },
+        {
+          "name": "Impossible!",
+          "message": "Fake!",
+          "points": 0,
+          "type": "false",
+          "gif": "https://media.giphy.com/media/l4FGvkHhFIDQ7woNi/giphy.gif"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Ribó sustituye a los Reyes Magos de Oriente por la Reinas Magas Republicanas",
+      "message": "No, Ribó no ha substituït als Reis Mags d'Orient, sinó que ha fet que València puga comptar amb dos meravelloses cavalcades, una el dia 5 de gener on els xiquets donen la benvinguda als Reis Mags d'Orient, Gaspar, Melchor i Baltasar, i una altra per a celebrar la gran 'Festa de la Infància' de la mà de les reines magues Igualtat, Llibertat i Fraternitat.",
+      "thumbnail": "http://e01-elmundo.uecdn.es/assets/multimedia/imagenes/2016/01/04/14519302797856.jpg",
+      "options": [
+        {
+          "name": "Vertader",
+          "message": "Fake!",
+          "points": 0,
+          "type": "true",
+          "gif": "https://media.giphy.com/media/23BST5FQOc8k8/giphy.gif"
+        },
+        {
+          "name": "Impossible!",
+          "message": "Fake!",
+          "points": 1,
+          "type": "false",
+          "gif": "https://media.giphy.com/media/TEFplLVRDMWBi/giphy.gif"
+        }
+      ]
+    },
+    {
+      "id": 14,
       "sup": "BONUS ROUND (esta és fàcil)",
       "name": "Compromís quita la bandera de España del puerto de València",
       "message": "Es tracta d'un bulo que va circular per xarxes socials. La bandera d'Espanya de la Marina Real mai ha estat retirada per Compromís.",
-      "thumbnail": "http://ichef.bbci.co.uk/wwfeatures/wm/live/1280_640/images/live/p0/30/zw/p030zwtv.jpg",
+      "thumbnail": "http://images.eldiario.es/cv/Parte-tuit-Nacho-Pou_EDIIMA20150615_0665_17.jpg",
       "options": [
         {
           "name": "Vertader",
