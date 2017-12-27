@@ -45,7 +45,7 @@ export default {
 
 .intro-heading {
   font-family: $font-intro;
-  font-size: 7rem;
+  font-size: 5rem;
   position: relative;
   text-shadow: 10px 10px 0 $secondary-color;
   transform: skew(0deg, -10deg);
@@ -54,7 +54,7 @@ export default {
 }
 
 .intro-subheading {
-  font-size: 2.5rem;
+  font-size: 2rem;
   letter-spacing: -1px;
   margin-top: 3rem;
   line-height: 1;
@@ -109,6 +109,14 @@ export default {
 @media (min-width: 769px) {
   .intro {
     padding: 5rem;
+
+    &-heading {
+      font-size: 7rem;
+    }
+
+    &-subheading {
+      font-size: 2.5rem;
+    }
 
     p {
       font-size: 1.25rem;

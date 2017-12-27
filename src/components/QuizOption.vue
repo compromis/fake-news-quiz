@@ -54,10 +54,10 @@ input {
 .option {
   display: block;
   cursor: pointer;
-  padding: 1rem;
+  padding: 0.75rem;
   padding-left: 60px;
   border-radius: 8px;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: $white;
   position: relative;
   transition: 0.2s ease-in-out;
@@ -105,5 +105,12 @@ input {
 .option-is-incorrect.selected,
 .option-is-incorrect.selected:hover {
   box-shadow: 0 0 0 5px red;
+}
+
+@media (min-width: 769px) {
+  .option {
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
 }
 </style>

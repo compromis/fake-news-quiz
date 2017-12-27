@@ -130,8 +130,8 @@ export default {
 
   h3 {
     font-family: $font-headline;
-    font-size: 2rem;
-    padding: 1rem 1.5rem 1.5rem 1.5rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
     line-height: 1.25;
     margin-bottom: 1rem;
   }
@@ -211,5 +211,14 @@ export default {
   opacity: 0;
   height: 0;
   overflow: hidden;
+}
+
+@media (min-width: 769px) {
+  .question {
+    h3 {
+      font-size: 2rem;
+      padding: 1rem 1.5rem 1.5rem 1.5rem;
+    }
+  }
 }
 </style>
