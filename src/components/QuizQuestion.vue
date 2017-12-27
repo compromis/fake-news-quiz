@@ -2,9 +2,8 @@
   <div :class="{ 'question-outer-wrapper': true, 'question-hidden': !visible }" :id="'q' + question.id">
     <div class="question-wrapper">
       <div class="question">
-        <div class="question-image">
-          <img :src="'static/img/questions/' + question.id + '.jpg'" alt="Imatge de la noticia" />
-        </div>
+        <div class="question-image" :style="'background-image: url(static/img/questions/' + question.id + '.jpg)'"></div>
+        <div class="question-badge" v-if="question.badge"><span>{{ question.badge }}</span></div>
         <h3>{{ question.name }}</h3>
 
         <div class="columns question-options">
@@ -131,20 +130,33 @@ export default {
     line-height: 1.25;
     margin-bottom: 1rem;
   }
-}
 
-.question-image {
-  margin: -3rem -3rem 1rem -3rem;
-  max-height: 200px;
-  overflow: hidden;
-  border-bottom: 4px $secondary-color solid;
-}
+  &-badge {
+    text-align: center;
+    margin-top: 2rem;
 
-.question-options {
-  margin-bottom: 0;
+    span {
+      background: $secondary-color;
+      color: #fff;
+      padding: 0.25rem 1rem;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+  }
 
-  .column {
-    padding-bottom: 0;
+  &-image {
+    margin: -3rem -3rem 1rem -3rem;
+    height: 200px;
+    border-bottom: 5px $secondary-color solid;
+    background-size: cover;
+  }
+
+  &-options {
+    margin-bottom: 0;
+
+    .column {
+      padding-bottom: 0;
+    }
   }
 }
 
