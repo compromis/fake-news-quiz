@@ -111,6 +111,7 @@ input {
   .option {
     padding: 1rem;
     font-size: 1.5rem;
+    padding-left: 60px;
   }
 }
 </style>
