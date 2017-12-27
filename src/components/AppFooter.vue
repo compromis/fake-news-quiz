@@ -30,6 +30,7 @@ export default {
 
 .footer {
   color: #414142;
+  margin-top: 400px;
   padding-bottom: 2rem;
 
   p {

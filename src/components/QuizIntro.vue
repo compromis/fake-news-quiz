@@ -89,6 +89,23 @@ export default {
   margin: 1rem auto;
 }
 
+.intro-action {
+  margin-top: 2rem;
+
+  a {
+    color: #fff;
+    border: 2px #fff solid;
+    border-radius: 30px;
+    padding: 0.5rem 2rem;
+    transition: 0.25s ease-in-out;
+
+    &:hover {
+      background: #fff;
+      color: $background;
+    }
+  }
+}
+
 @media (min-width: 769px) {
   .intro {
     padding: 5rem;

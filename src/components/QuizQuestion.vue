@@ -29,7 +29,7 @@
                 <img :src="selectedOption.gif" alt="Gif" class="answer-gif" />
                 <h4>{{ selectedOption.message }}</h4>
                 <p>{{ question.message }}</p>
-                <p v-if="nextQuestion" class="next-button"><a :href="'#q' + nextQuestion" v-scroll-to="'#q' + nextQuestion">Següent notícia</a></p>
+                <p v-if="nextQuestionId" class="next-button"><a :href="'#q' + nextQuestionId" v-scroll-to="'#q' + nextQuestionId">Següent notícia</a></p>
                 <p v-else class="next-button"><a href="#results" v-scroll-to="'#results'">Resultats</a></p>
               </div>
             </div>
@@ -58,7 +58,7 @@ export default {
 
   props: {
     question: Object,
-    nextQuestion: [Number, Boolean]
+    nextQuestionId: [Number, Boolean]
   },
 
   data () {
@@ -71,6 +71,7 @@ export default {
     selectOption (option) {
       this.selectedOption = option
       this.$emit('updateQuiz', option)
+      this.$emit('nextQuestion', this.question.id + 1)
       this.$scrollTo('#a' + this.question.id, 500, { offset: -140 })
     }
   }

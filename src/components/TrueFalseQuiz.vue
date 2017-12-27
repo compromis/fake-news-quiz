@@ -1,13 +1,17 @@
 <template>
   <div class="true-false-quiz">
     <div v-for="question in questions">
-      <quiz-question
-        :question="question"
-        :next-question="question.id + 1 <= questions.length ? question.id + 1 : false" 
-        @updateQuiz="updateQuiz" />
+      <transition name="slide">
+        <quiz-question
+          v-if="visibleQuestions.includes(question.id)"
+          :question="question"
+          :next-question-id="question.id + 1 <= questions.length ? question.id + 1 : false"
+          @updateQuiz="updateQuiz"
+          @nextQuestion="nextQuestion" />
+        </transition>
     </div>
 
-    <div class="result" v-if="answers.length == questions.length && answers.length > 1">
+    <div class="results" id="results" v-if="answers.length == questions.length && answers.length > 1">
       Final {{ correctAnswers }} correct answers out of {{ questions.length }}
     </div>
   </div>
@@ -49,6 +53,12 @@ export default {
       }
 
       this.answers.push(question)
+    },
+
+    nextQuestion (nextQuestion) {
+      if (this.questions.length >= nextQuestion) {
+        this.visibleQuestions.push(nextQuestion)
+      }
     }
   }
 }
