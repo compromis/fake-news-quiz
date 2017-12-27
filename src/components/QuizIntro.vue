@@ -13,8 +13,8 @@
       </div>
     </div>
     <h1 class="intro-heading">FAKE NEWS</h1>
-    <h2 class="intro-subheading">Eres inmune?</h2>
-    <p class="intro-description">Eres dels que pensen que només els “cunyaos” són carnassa de fakes news, i que estàs prou informat per a diferenciar entre una notícia falsa i una que no ho és? Posat a prova en el següent quiz!</p>
+    <h2 class="intro-subheading">N'ets inmune?</h2>
+    <p class="intro-description">Ets dels qui pensen que només els “cunyaos” són carnassa de fake news i que estàs prou informat per a diferenciar entre una notícia falsa i una que no ho és? Posa't a prova en el següent quiz!</p>
     <p class="intro-note"><strong>Avís:</strong> Encara que ho semble, estes notícies no van ser publicades el Dia dels Innocents</p>
     <p class="intro-action"><a href="#q1" v-scroll-to="'#q1'">Comença</a></p>
   </section>
