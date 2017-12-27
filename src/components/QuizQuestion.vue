@@ -3,7 +3,7 @@
     <div class="question-wrapper">
       <div class="question">
         <div class="question-image">
-          <img :src="question.thumbnail" alt="Imatge de la noticia" />
+          <img :src="'static/img/questions/' + question.id + '.jpg'" alt="Imatge de la noticia" />
         </div>
         <h3>{{ question.name }}</h3>
 
