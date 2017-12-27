@@ -299,22 +299,26 @@
   ],
   "results": [
     {
-      "points": 0,
+      "minPoints": 0,
+      "maxPoints": 7,
       "message": "No et cregues tot el que lliges per Internet. Malauradament, la xarxa està plena de notícies falses, per això, et recomanem sempre llegir-les en més d'un mitjà de comunicació per a poder contrastar-les i que no et donen gat per llebre.",
       "gif": "https://media.giphy.com/media/P0RWkdsRpK7ss/giphy.gif"
     },
     {
-      "points": 8,
+      "minPoints": 8,
+      "maxPoints": 12,
       "message": "Sens dubte eres una persona que està al dia de la informació, però, a vegades baixes la guàrdia i et colen alguna que altra “fake news”, ves més en compte.",
       "gif": "https://media3.giphy.com/media/l0IyjvPvBs0oYEwZW/giphy.gif"
     },
     {
-      "points": 13,
+      "minPoints": 13,
+      "maxPoints": 14,
       "message": "Enhorabona, eres un pro detectant notícies falses!",
       "gif": "https://media.giphy.com/media/26DOoDwdNGKAg6UKI/giphy.gif"
     },
     {
-      "points": 15,
+      "minPoints": 15,
+      "maxPoints": 15,
       "message": "Wow! Eres un pro detectant notícies falses, no te colen ni una.",
       "gif": "https://media.giphy.com/media/YYD3fLEOdcOv6/giphy.gif"
     }

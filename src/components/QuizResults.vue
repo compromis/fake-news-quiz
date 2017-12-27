@@ -1,5 +1,6 @@
 <template>
   <div class="results" id="results">
+    <Party class="party-hat" />
     <h3>Has encertat {{ correctAnswers }} de {{ totalQuestions }}</h3>
     <img :src="result.gif" alt="Gif reacció" />
     <p>{{ result.message }}</p>
@@ -7,7 +8,7 @@
 </template>
 
 <script>
-import Thumbs from '../assets/images/thumbs.svg'
+import Party from '../assets/images/party.svg'
 
 export default {
   name: 'quiz-results',
@@ -19,12 +20,12 @@ export default {
   },
 
   components: {
-    Thumbs
+    Party
   },
 
   computed: {
     result: function () {
-      return this.results.find((element) => this.correctAnswers <= element.points)
+      return this.results.find((element) => this.correctAnswers >= element.minPoints && this.correctAnswers <= element.maxPoints)
     }
   }
 }
@@ -34,6 +35,7 @@ export default {
 @import '../variables';
 
 .results {
+  position: relative;
   max-width: 600px;
   margin: 0 auto;
   background: $white;
@@ -59,5 +61,11 @@ export default {
     margin: 1rem 0;
     max-width: 100%;
   }
+}
+
+.party-hat {
+  fill: $text-color-dark;
+  width: 80px;
+  height: 80px;
 }
 </style>
