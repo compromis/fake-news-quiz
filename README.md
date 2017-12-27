@@ -1,6 +1,6 @@
-# quiz-compromis
+# Compromis Fake News Quiz
 
-> A quiz app for Compromis
+> A vue.js quiz app to spot the fake news
 
 ## Build Setup
 
