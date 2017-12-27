@@ -1,5 +1,5 @@
 <template>
-  <div class="question-outer-wrapper" :id="'q' + question.id">
+  <div :class="{ 'question-outer-wrapper': true, 'question-hidden': !visible }" :id="'q' + question.id">
     <div class="question-wrapper">
       <div class="question">
         <div class="question-image">
@@ -14,7 +14,7 @@
               :option="option"
               :selected="selectedOption.name == option.name"
               :question-id="question.id"
-              :disabled="selectedOption.name != null"
+              :disabled="selectedOption.name != null || !visible"
               @change="selectOption" />
           </div>
         </div>
@@ -58,6 +58,7 @@ export default {
 
   props: {
     question: Object,
+    visible: Boolean,
     nextQuestionId: [Number, Boolean]
   },
 
@@ -85,6 +86,10 @@ export default {
   max-width: 650px;
   margin: 2rem auto;
   padding: 0 1rem;
+}
+
+.question-hidden {
+  opacity: 0.5;
 }
 
 .question-wrapper {

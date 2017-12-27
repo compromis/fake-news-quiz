@@ -3,7 +3,7 @@
     <div v-for="question in questions">
       <transition name="slide">
         <quiz-question
-          v-if="visibleQuestions.includes(question.id)"
+          :visible="visibleQuestions.includes(question.id)"
           :question="question"
           :next-question-id="question.id + 1 <= questions.length ? question.id + 1 : false"
           @updateQuiz="updateQuiz"
