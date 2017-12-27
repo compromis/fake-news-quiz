@@ -104,17 +104,13 @@ export default {
   a {
     color: $text-color-dark;
     border:  2px $text-color-dark solid;
-    padding: 0.25rem 1rem;
-    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
     transition: 0.2s ease-in-out;
 
     &:hover {
       background: $text-color-dark;
       color: #fff;
-    }
-
-    &:hover {
-
     }
   }
 }
