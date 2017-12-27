@@ -1,9 +1,9 @@
 <template>
-  <div class="question-outer-wrapper">
+  <div class="question-outer-wrapper" :id="'q' + question.id">
     <div class="question-wrapper">
       <div class="question">
         <div class="question-image">
-          <img :src="question.thumbnail" alt="Imatge de ka noticia" />
+          <img :src="question.thumbnail" alt="Imatge de la noticia" />
         </div>
         <h3>{{ question.name }}</h3>
 
@@ -19,18 +19,22 @@
           </div>
         </div>
 
-        <transition name="slide">
-          <div class="answer" v-if="selectedOption.name">
-            <div :class="{ 'answer-wrapper': true, 'answered-correctly': selectedOption.points > 0, 'answered-incorrectly': selectedOption.points == 0 }">
-              <div class="answer-icon">
-                <Thumbs :class="{ 'upside-down': selectedOption.points == 0 }" />
+        <div :id="'a' + question.id">
+          <transition name="slide">
+            <div class="answer" v-if="selectedOption.name">
+              <div :class="{ 'answer-wrapper': true, 'answered-correctly': selectedOption.points > 0, 'answered-incorrectly': selectedOption.points == 0 }">
+                <div class="answer-icon">
+                  <Thumbs :class="{ 'upside-down': selectedOption.points == 0 }" />
+                </div>
+                <img :src="selectedOption.gif" alt="Gif" class="answer-gif" />
+                <h4>{{ selectedOption.message }}</h4>
+                <p>{{ question.message }}</p>
+                <p v-if="nextQuestion" class="next-button"><a :href="'#q' + nextQuestion" v-scroll-to="'#q' + nextQuestion">Següent notícia</a></p>
+                <p v-else class="next-button"><a href="#results" v-scroll-to="'#results'">Resultats</a></p>
               </div>
-              <img :src="selectedOption.gif" alt="Gif" class="answer-gif" />
-              <h4>{{ selectedOption.message }}</h4>
-              <p>{{ question.message }}</p>
             </div>
-          </div>
-        </transition>
+          </transition>
+        </div>
       </div>
     </div>
   </div>
@@ -53,7 +57,8 @@ export default {
   },
 
   props: {
-    question: Object
+    question: Object,
+    nextQuestion: [Number, Boolean]
   },
 
   data () {
@@ -66,6 +71,7 @@ export default {
     selectOption (option) {
       this.selectedOption = option
       this.$emit('updateQuiz', option)
+      this.$scrollTo('#a' + this.question.id, 500, { offset: -140 })
     }
   }
 }
@@ -84,6 +90,27 @@ export default {
   border: 3px rgba(255, 255, 255, 0.2) solid;
   padding: 5px;
   border-radius: 15px;
+}
+
+.next-button {
+  margin-top: 1.5rem;
+
+  a {
+    color: $text-color-dark;
+    border:  2px $text-color-dark solid;
+    padding: 0.25rem 1rem;
+    border-radius: 20px;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      background: $text-color-dark;
+      color: #fff;
+    }
+
+    &:hover {
+
+    }
+  }
 }
 
 .question {
@@ -111,10 +138,18 @@ export default {
   border-bottom: 4px $secondary-color solid;
 }
 
+.question-options {
+  margin-bottom: 0;
+
+  .column {
+    padding-bottom: 0;
+  }
+}
+
 .answer {
   position: relative;
   background: $white;
-  margin: 0 -1.5rem -1.5rem -1.5rem;
+  margin: 1.5rem -1.5rem -1.5rem -1.5rem;
 
   &-icon {
     position: absolute;

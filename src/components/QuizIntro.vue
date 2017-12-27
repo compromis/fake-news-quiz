@@ -15,6 +15,7 @@
     <h1 class="intro-heading">FAKE NEWS</h1>
     <h2 class="intro-subheading">Eres inmune?</h2>
     <p class="intro-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    <p class="intro-action"><a href="#q1" v-scroll-to="'#q1'">START</a></p>
   </section>
 </template>
 

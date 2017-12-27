@@ -1,7 +1,10 @@
 <template>
   <div class="true-false-quiz">
     <div v-for="question in questions">
-      <quiz-question :question="question" @updateQuiz="updateQuiz" />
+      <quiz-question
+        :question="question"
+        :next-question="question.id + 1 <= questions.length ? question.id + 1 : false" 
+        @updateQuiz="updateQuiz" />
     </div>
 
     <div class="result" v-if="answers.length == questions.length && answers.length > 1">
@@ -26,6 +29,7 @@ export default {
 
   data () {
     return {
+      visibleQuestions: [1],
       answers: []
     }
   },
