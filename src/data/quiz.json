@@ -281,14 +281,14 @@
       "options": [
         {
           "name": "Vertader",
-          "message": "Tant de bó!",
+          "message": "Tant de bo!",
           "points": 0,
           "type": "true",
           "gif": "https://media3.giphy.com/media/hPPx8yk3Bmqys/giphy.gif"
         },
         {
           "name": "Sí home...",
-          "message": "Tant de bó!",
+          "message": "Tant de bo!",
           "points": 1,
           "type": "false",
           "gif": "https://media0.giphy.com/media/9ayjEAMPOpbMY/giphy.gif"
