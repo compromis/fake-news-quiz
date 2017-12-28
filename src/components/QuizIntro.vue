@@ -117,7 +117,7 @@ export default {
 
 @media (min-width: 769px) {
   .intro {
-    padding: 5rem;
+    padding: 3rem 5rem;
 
     &-heading {
       font-size: 7rem;
