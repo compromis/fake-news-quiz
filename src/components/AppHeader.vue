@@ -28,7 +28,7 @@ export default {
 
   data () {
     return {
-      tweet: 'Hello'
+      tweet: 'Fake News! Posa\'t a prova amb este quiz'
     }
   }
 }
