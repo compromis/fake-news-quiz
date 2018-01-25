@@ -16,7 +16,7 @@
     <h2 class="intro-subheading">N'ets inmune?</h2>
     <p class="intro-description">Ets dels qui pensen que només els “cunyaos” són carnassa de fake news i que estàs prou informat per a diferenciar entre una notícia falsa i una que no ho és? Posa't a prova en el següent quiz!</p>
     <p class="intro-note"><strong>Avís:</strong> Encara que ho semble, estes notícies no van ser publicades el Dia dels Innocents</p>
-    <p class="intro-action"><a href="#q1" v-scroll-to="'#q1'">Comença</a></p>
+    <p class="intro-action"><a href="#q1" v-scroll-to="'#q1'"><span class="emoji">📝</span> Comença</a></p>
   </section>
 </template>
 
@@ -112,6 +112,12 @@ export default {
       background: #fff;
       color: $background;
     }
+  }
+
+  .emoji {
+    position: relative;
+    top: 2px;
+    margin-right: 0.5rem;
   }
 }
 
